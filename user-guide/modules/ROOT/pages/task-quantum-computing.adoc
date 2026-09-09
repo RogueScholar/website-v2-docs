@@ -287,7 +287,9 @@ The following program simulates a discrete-time quantum walk using a coin flip (
 
 The walker starts at position `x = 0` - the middle of the array. It has an internal quantum coin state (spin |0⟩ or |1⟩), and the quantum coin flip (the Hadamard Gate) creates superposition, splitting into two paths: if coin is |0⟩, move left, if coin is |1⟩, move right.
 
-Unlike a classical random walk (which results in a bell curve), quantum walks create two dominant peaks due to constructive and destructive interference.
+Unlike a classical random walk (which results in a bell curve), quantum walks create dominant peaks due to constructive and destructive interference:
+
+image::quantum-walk-one.png[one-dimensional quantum walk]
 
 This should be clearer by running a simulation.
 
@@ -402,7 +404,9 @@ The result shows the probability distribution of being at any one of the positio
 
 === Two-dimensional Quantum Walks
 
-We can extend the quantum walk example to simulate a walker with an _x,y_ position on a grid. Two coins are tossed: _00_ - move left, _01_ - move right, _10_ - move up, _11_ - move down.
+We can extend the quantum walk example to simulate a walker with an _x,y_ position on a grid. Two coins are tossed: _00_ - move left, _01_ - move right, _10_ - move up, _11_ - move down:
+
+image::quantum-walk-two.png[two-dimensional quantum walk]
 
 This program simulates a _10 x 10_ quantum grid and tracks the probability of the walker being at each position.
 
@@ -518,9 +522,9 @@ If you run this code you will get something like:
 
 ----
 
-Again, the result shows the probability distribution of being at any one of the positions at the end of the 2D walk.
+Again, the result shows the probability distribution of being at any one of the positions at the end of the 2D walk. The following image shows the distribution, after 100 steps, with visual clarity - a rich structured probability distribution with high-probability regions at specific positions, not just a spreading blur:
 
-image::quantum-walk-simulation.png[]
+image::quantum-walk-two-100.png[quantum walk in 2D]
 
 
 === Other Quantum Algorithms
