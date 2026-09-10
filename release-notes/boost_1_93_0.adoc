@@ -29,6 +29,12 @@ boost_at:/doc/libs/1_93_0/[Documentation]
 // ** Conform to `std::pointer_traits` requirements (boost_gh:pr[interprocess,32]).
 // ** Fixed `named_condition_any` fails to notify (boost_gh:issue[interprocess,62]).
 
+* boost_phrase:library[PolyCollection,/libs/poly_collection/]:
+** Added unordered, stable collections `boost::base_unordered_collection`, 
+`boost::function_unordered_collection`, `boost::any_unordered_collection` and
+`boost::variant_unordered_collection`, internally based on
+https://www.boost.org/doc/html/container/non_standard_containers.html#container.non_standard_containers.hub[`boost::container::hub`]. 
+
 == Compilers Tested
 
 // Edit this section as appropriate
